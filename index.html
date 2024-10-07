@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    body{
+      background-color: hsl(212, 45%, 89%);
+    }
+
+    .attribution { 
+      position: relative;
+      top: 30px;
+      font-size: 11px; 
+      text-align: center; 
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    .container{
+      width: 380px;
+      height: 600px;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 5%;
+      position: relative;
+      left: 20px;
+      top: 100px;
+    }
+    .qrcode{
+      width: 360px;
+      border-radius: 5%;
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+    .headtext {
+      font-family: "Open Sans", sans-serif;
+      font-size: 25px;
+      width: 380px;
+      position: relative;
+      top: 10px;
+      text-align: center;
+    }
+    .ptext{
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      text-align: center;
+      width: 350px;
+      height: 65px;
+      position: relative;
+      top: 10px;
+      left: 15px;
+      text-align: center;
+      overflow: wrap;
+
+    }
+
+    @media (min-width: 1440px){
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="upside">
+      <img class="qrcode" src="./images/image-qr-code.png">
+    </div>
+    <div>
+      <div>
+        <h1 class="headtext">Improve your front-end skills by building projects</h1>
+      </div>
+      <div class="ptext">
+          <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+      
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Kamil Ozkayhan</a>.
+    </div>
+  </div>
+  
+  
+</body>
+</html>
